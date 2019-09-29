@@ -78,6 +78,7 @@ fun s:set_props()
         \ b:filetype == 'javascript' ||
         \ b:filetype == 'javascript.jsx' ||
         \ b:filetype == 'typescript' ||
+        \ b:filetype == 'typescript.tsx' ||
         \ b:filetype == 'less' ||
         \ b:filetype == 'php' ||
         \ b:filetype == 'go' ||
@@ -170,7 +171,7 @@ fun s:set_props()
     elseif b:filetype == 'octave' ||
           \ b:filetype == 'matlab' ||
           \ b:filetype == 'tex' ||
-		  \ b:filetype == 'vimwiki' 
+		      \ b:filetype == 'vimwiki'
         let b:comment_char = '%'
     " ----------------------------------
     elseif b:filetype == 'cfg'
